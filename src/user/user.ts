@@ -3,11 +3,11 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 
 @Schema()
 class UserDocument {
-  @Prop()
-  username: string;
-  
-  @Prop()
-  createdAt: Date;
+    @Prop()
+    username: string;
+
+    @Prop()
+    createdAt: Date;
 }
 
 export type User = UserDocument & Document;
